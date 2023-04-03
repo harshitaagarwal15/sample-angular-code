@@ -19,8 +19,8 @@ jobs:
     - name: Install Dependencies
       run: npm install
     
-    - name: Lint with ESLint
-      run: ng lint
+    - name: Linting the code
+      run: npm run lint
 
     - name: Format with Prettier
       run: npm run prettier
