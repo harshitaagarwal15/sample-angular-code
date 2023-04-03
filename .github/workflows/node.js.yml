@@ -3,9 +3,6 @@ name: Node.js CI
 on:
   push:
     branches: [dev, stage, prod]
-name: CI
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
