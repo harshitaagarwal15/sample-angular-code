@@ -22,8 +22,8 @@ jobs:
     - name: Linting the code
       run: npm run lint
 
-    - name: Format with Prettier
-      run: npm run prettier
+    # - name: Format with Prettier
+    #   run: npm run prettier
 
     - name: Test with Jest
       env:
