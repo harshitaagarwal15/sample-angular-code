@@ -1,4 +1,3 @@
-# Create   EC2-Instance
 resource "aws_instance" "ec2_instance" {
   ami                    = data.aws_ami.myami.id
   instance_type          = var.minikube_type
