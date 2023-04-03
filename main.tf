@@ -1,14 +1,10 @@
 # Terraform provider block for AWS
 provider "aws" {
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-  region     = var.aws_region
+  access_key = "AKIAUBZGQEMJRQG4GVU5"
+  secret_key = "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"
+  region     = "ap-south-1"
 }
 
-# Input variables
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
-variable "aws_region" {}
 
 variable "application_name" {
   type    = string
@@ -121,6 +117,4 @@ resource "aws_instance" "web_instances" {
   instance_type = var.instance_type
   key_name      = var.key_name
   subnet_id     = var.subnet_id
-
-  tags = {
-    Name
+}
